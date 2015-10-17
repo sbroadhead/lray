@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3695FF0-5E1A-4005-AB08-A036881986EF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RayTrace</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\thirdparty\luabind-0.9.1;$(ProjectDir)\..\src;$(ProjectDir)\..\thirdparty\lua-5.1.4\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\..\thirdparty\luabind-0.9.1;$(ProjectDir)\..\src;$(ProjectDir)\..\thirdparty\lua-5.1.4\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>luabind.lib;lua.lib;opengl32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>copy $(ProjectDir)\..\src\luascene\luascene.lua $(OutDir)
+copy $(ProjectDir)\..\src\luascene\cube.obj $(OutDir)</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>dummy</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>luabind.lib;lua.lib;opengl32.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>copy $(ProjectDir)\..\src\luascene\luascene.lua $(OutDir)
+copy $(ProjectDir)\..\src\luascene\cube.obj $(OutDir)</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>dummy</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\image\targa.cpp" />
+    <ClCompile Include="..\src\luascene\luascene.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\math\box.cpp" />
+    <ClCompile Include="..\src\math\color.cpp" />
+    <ClCompile Include="..\src\math\matrix.cpp" />
+    <ClCompile Include="..\src\math\perlin.cpp" />
+    <ClCompile Include="..\src\math\point.cpp" />
+    <ClCompile Include="..\src\math\transform.cpp" />
+    <ClCompile Include="..\src\math\vector.cpp" />
+    <ClCompile Include="..\src\renderer\accel\kdtree.cpp" />
+    <ClCompile Include="..\src\renderer\camera\perspective.cpp" />
+    <ClCompile Include="..\src\renderer\entity\cone.cpp" />
+    <ClCompile Include="..\src\renderer\entity\cylinder.cpp" />
+    <ClCompile Include="..\src\renderer\entity\mesh.cpp" />
+    <ClCompile Include="..\src\renderer\entity\sphere.cpp" />
+    <ClCompile Include="..\src\renderer\light.cpp" />
+    <ClCompile Include="..\src\renderer\raytrace.cpp" />
+    <ClCompile Include="..\src\renderer\scene.cpp" />
+    <ClCompile Include="..\src\util\zone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\common.h" />
+    <ClInclude Include="..\src\image\image.h" />
+    <ClInclude Include="..\src\image\targa.h" />
+    <ClInclude Include="..\src\luascene\luascene.h" />
+    <ClInclude Include="..\src\math\box.h" />
+    <ClInclude Include="..\src\math\color.h" />
+    <ClInclude Include="..\src\math\math.h" />
+    <ClInclude Include="..\src\math\matrix.h" />
+    <ClInclude Include="..\src\math\perlin.h" />
+    <ClInclude Include="..\src\math\point.h" />
+    <ClInclude Include="..\src\math\ray.h" />
+    <ClInclude Include="..\src\math\transform.h" />
+    <ClInclude Include="..\src\math\vector.h" />
+    <ClInclude Include="..\src\renderer\accel\kdtree.h" />
+    <ClInclude Include="..\src\renderer\camera\camera.h" />
+    <ClInclude Include="..\src\renderer\camera\perspective.h" />
+    <ClInclude Include="..\src\renderer\entity\cone.h" />
+    <ClInclude Include="..\src\renderer\entity\cylinder.h" />
+    <ClInclude Include="..\src\renderer\entity\entity.h" />
+    <ClInclude Include="..\src\renderer\entity\mesh.h" />
+    <ClInclude Include="..\src\renderer\entity\sphere.h" />
+    <ClInclude Include="..\src\renderer\geometry.h" />
+    <ClInclude Include="..\src\renderer\intersection.h" />
+    <ClInclude Include="..\src\renderer\light.h" />
+    <ClInclude Include="..\src\renderer\raytrace.h" />
+    <ClInclude Include="..\src\renderer\scene.h" />
+    <ClInclude Include="..\src\renderer\texture\checkerpigment.h" />
+    <ClInclude Include="..\src\renderer\texture\colorpigment.h" />
+    <ClInclude Include="..\src\renderer\texture\finish.h" />
+    <ClInclude Include="..\src\renderer\texture\imagepigment.h" />
+    <ClInclude Include="..\src\renderer\texture\linearmap.h" />
+    <ClInclude Include="..\src\renderer\texture\marblepigment.h" />
+    <ClInclude Include="..\src\renderer\texture\pigment.h" />
+    <ClInclude Include="..\src\renderer\texture\texture.h" />
+    <ClInclude Include="..\src\renderer\texture\texturemap.h" />
+    <ClInclude Include="..\src\renderer\texture\uvmap.h" />
+    <ClInclude Include="..\src\renderer\texture\woodpigment.h" />
+    <ClInclude Include="..\src\util\random.h" />
+    <ClInclude Include="..\src\util\zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\luascene\luascene.lua">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\luascene\cube.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

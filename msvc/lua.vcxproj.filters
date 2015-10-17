@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lapi.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lauxlib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lbaselib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lcode.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ldblib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ldebug.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ldo.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ldump.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lfunc.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lgc.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\linit.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\liolib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\llex.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lmathlib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lmem.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\loadlib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lobject.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lopcodes.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\loslib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lparser.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lstate.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lstring.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lstrlib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ltable.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ltablib.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\ltm.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lua.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\luac.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lundump.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lvm.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\lzio.c" />
+    <ClCompile Include="..\thirdparty\lua-5.1.4\src\print.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lapi.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lauxlib.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lcode.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\ldebug.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\ldo.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lfunc.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lgc.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\llex.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\llimits.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lmem.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lobject.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lopcodes.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lparser.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lstate.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lstring.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\ltable.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\ltm.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lua.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\luaconf.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lualib.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lundump.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lvm.h" />
+    <ClInclude Include="..\thirdparty\lua-5.1.4\src\lzio.h" />
+  </ItemGroup>
+</Project>

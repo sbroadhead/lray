@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RayTrace", "RayTrace.vcproj", "{99942BEA-F128-4EAB-BFA7-DCBA8264F16B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E68F4512-FB1F-41CC-B433-EE13D7412C0E} = {E68F4512-FB1F-41CC-B433-EE13D7412C0E}
+		{3434912C-F5D6-4430-80FE-40FBEDFD487C} = {3434912C-F5D6-4430-80FE-40FBEDFD487C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "luabind", "luabind.vcproj", "{E68F4512-FB1F-41CC-B433-EE13D7412C0E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua", "lua.vcproj", "{3434912C-F5D6-4430-80FE-40FBEDFD487C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99942BEA-F128-4EAB-BFA7-DCBA8264F16B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99942BEA-F128-4EAB-BFA7-DCBA8264F16B}.Debug|Win32.Build.0 = Debug|Win32
+		{99942BEA-F128-4EAB-BFA7-DCBA8264F16B}.Release|Win32.ActiveCfg = Release|Win32
+		{99942BEA-F128-4EAB-BFA7-DCBA8264F16B}.Release|Win32.Build.0 = Release|Win32
+		{E68F4512-FB1F-41CC-B433-EE13D7412C0E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E68F4512-FB1F-41CC-B433-EE13D7412C0E}.Debug|Win32.Build.0 = Debug|Win32
+		{E68F4512-FB1F-41CC-B433-EE13D7412C0E}.Release|Win32.ActiveCfg = Release|Win32
+		{E68F4512-FB1F-41CC-B433-EE13D7412C0E}.Release|Win32.Build.0 = Release|Win32
+		{3434912C-F5D6-4430-80FE-40FBEDFD487C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3434912C-F5D6-4430-80FE-40FBEDFD487C}.Debug|Win32.Build.0 = Debug|Win32
+		{3434912C-F5D6-4430-80FE-40FBEDFD487C}.Release|Win32.ActiveCfg = Release|Win32
+		{3434912C-F5D6-4430-80FE-40FBEDFD487C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

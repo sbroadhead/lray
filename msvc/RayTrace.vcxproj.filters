@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\renderer\entity\sphere.cpp">
+      <Filter>src\renderer\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\camera\perspective.cpp">
+      <Filter>src\renderer\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\image\targa.cpp">
+      <Filter>src\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\raytrace.cpp">
+      <Filter>src\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\light.cpp">
+      <Filter>src\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\box.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\color.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\matrix.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\point.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\transform.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\vector.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\scene.cpp">
+      <Filter>src\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\accel\kdtree.cpp">
+      <Filter>src\renderer\accel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\zone.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\luascene\luascene.cpp">
+      <Filter>src\luascene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\entity\cylinder.cpp">
+      <Filter>src\renderer\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\entity\mesh.cpp">
+      <Filter>src\renderer\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\math\perlin.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\renderer\entity\cone.cpp">
+      <Filter>src\renderer\entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5ffcff49-31ca-48dd-b883-4f14578129f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer">
+      <UniqueIdentifier>{574f9dff-9f41-4a02-9a19-885d4e055bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer\entity">
+      <UniqueIdentifier>{fddfff61-a868-4338-a44c-ad5a1bc09f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer\texture">
+      <UniqueIdentifier>{024fceff-cd8c-4b77-acb2-0f64cf1eb278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{8013b6d2-954f-4985-b058-09e6a41e4ada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\image">
+      <UniqueIdentifier>{c9fb1420-2dd4-4b93-b2e7-fa7389f518f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{7b46704f-a1d9-4b33-9be9-40d984c182fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer\accel">
+      <UniqueIdentifier>{a0e4c684-1426-4511-9886-e5574e9186b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer\camera">
+      <UniqueIdentifier>{0434df17-8223-4a7a-86c0-2bcd9f3b6da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\luascene">
+      <UniqueIdentifier>{39eee557-40f9-4d97-a6e0-07a77b83bdba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\renderer\entity\entity.h">
+      <Filter>src\renderer\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\texture.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\pigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\colorpigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\intersection.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\entity\sphere.h">
+      <Filter>src\renderer\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\scene.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\camera\camera.h">
+      <Filter>src\renderer\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\camera\perspective.h">
+      <Filter>src\renderer\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\raytrace.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\image\image.h">
+      <Filter>src\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\image\targa.h">
+      <Filter>src\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\finish.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\checkerpigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\random.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\light.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\box.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\color.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\math.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\matrix.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\point.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\ray.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\transform.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\vector.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\accel\kdtree.h">
+      <Filter>src\renderer\accel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\zone.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\luascene\luascene.h">
+      <Filter>src\luascene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\entity\cylinder.h">
+      <Filter>src\renderer\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\entity\mesh.h">
+      <Filter>src\renderer\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\math\perlin.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\geometry.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\texturemap.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\uvmap.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\linearmap.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\marblepigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\woodpigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\texture\imagepigment.h">
+      <Filter>src\renderer\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\renderer\entity\cone.h">
+      <Filter>src\renderer\entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\luascene\luascene.lua">
+      <Filter>src\luascene</Filter>
+    </None>
+    <None Include="..\src\luascene\cube.obj">
+      <Filter>src\luascene</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+RayTrace.exe ..\examples\finish.lua ..
